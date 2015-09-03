@@ -1,0 +1,134 @@
+<head>
+  <title>website</title>
+</head>
+
+<body>
+</body>
+
+<template name="Layout">
+
+	<div id = "header">
+            <div id="navArea">
+           		<a id="name" href="/home">Joachim Talloen</a>
+                <ul id="nav">                     
+                    <a href='CV.pdf' target="_blank"><li>cv</li></a>
+                    <a href="/bio"><li>bio</li></a>
+                    <a href="/research"><li>research</li></a>
+                    <a href="scripts_new.html"><li>scripts</li></a>
+                </ul>
+            </div>  	    
+    </div>
+	<div id = "mainArea">
+    	<div class = "container page">
+    		{{> yield}}
+    	</div>
+    	<div style="clear:both"></div>
+	</div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	     
+</template>
+
+<template name="home">
+
+	<h3> Introduction </h3>
+	<img id="me" src="me.png">
+	<p class= "introduction">
+	    My name is Joachim (Joe) Talloen and I am a PhD candidate in Behavioral Decision Research at the Carnegie Mellon University Department of <a href="http://www.cmu.edu/dietrich/sds/">Social and Decision Sciences</a>.  Drawing from my training, my research interests focus on behavioral economics and game theory.  I am interested in conducting both in lab as well as field experiments.  Most of my experiments have a context involving prosocial behavior, environmental concerns or moral behavior.  I have been collaborating on projects with with my advisor <a href="https://sites.google.com/site/alexoimas/">Alex Imas</a> and numerous other faculty. Additionally, I have also been collaborating with <a href="https://mdmlab.wordpress.com/people/gretchen/"> Gretchen Chapman </a> in the <a href="https://mdmlab.rutgers.edu/">Medical Decision Making lab</a> at Rutgers University, where I received my undergraduate degree.
+	</p>
+
+
+</template>
+
+<template name="bio">
+
+		        <h3> Biography </h3>
+		        	<div class="container">
+					<p> I was born in Leuven, Belgium and have two Belgian parents who have lived in Belgium for most of their lives. I spent the first 8 years of my life growing up in Belgium, until my dad, working for the parent company of Johnson and Johnson, was offered a job in Schaffhausen, Switzerland.  </p>
+
+					<p> At the age of 8 I thus moved to Switzerland, and started in an English speaking international school, without having been taught any English before. At the same time, I played in a local soccer club where they spoke Swiss German (a dialect of German). After spending 6 years in Switzerland I switched to a German-speaking public school to prepare myself for an entry exam to the "kantonalschule" ‐ a school specifically targeted to prepare students for college or university. Not even a month after I had passed this traitorous exam and was ready to attend the "kantonalschule," my dad informed us that he had been accepted for a position in Singapore. We had gone through some great experiences in Switzerland, and therefore after long contemplation and consideration we decided to move to Singapore. </p>
+
+					<p> Having completed my previous year in a German-speaking school I now returned to an English-speaking international school. I slowly started to adapt to my life in Singapore and traveled extensively throughout Asia. I was exposed to a lot of different cultures which really started to shape the ideals and values that I have today. After a short two years it started to become time for me to think about where I wanted to go to university. Initially, I was set on going back to Belgium or somewhere in Europe. However, in late November of 2010 my dad got notice that he had the opportunity to work in the US. Given the excellent higher education system that the US has to offer, I was very eager to move to the US. Unexpectedly, the deadlines for college applications in the US are usually in the beginning of December or January, and I had to work very hard to make sure that I could submit my applications on time. I was thrilled to be accepted to such a great school as Rutgers and started there in the Fall of 2011.  </p>
+
+					<p> Consequently, I had now moved to a fourth country, and a third continent, before turning 20. I started off in the Rutgers Business School but realized a year later that I was seeking a more theoretical education, and thus switched to the School of Arts and Sciences where I started my economics and psychology double major. As I found myself questioning numerous topics in class, I started to develop an interest in research.  </p> 
+					</div>
+</template>
+
+<template name="research">
+
+ 				<h3> Research </h3>
+  				<div class="container">
+  				<p>
+            	I have been conducting research since the spring semester of my sophmore year at Rutgers University.  I started out working in an Industrial Organization lab until I started to develop my research interests further and realized that these were more suited for the Medical Decision Making lab at Rutgers University, led by <a href="https://mdmlab.wordpress.com/people/gretchen/"> Gretchen Chapman</a>.  The first semester as a Research Assistant I helped graduate student <a href="https://mdmlab.wordpress.com/people/graduate-students/jeff/">Jeff DeWitt</a> with a dictator game.  I  started working on my own projects a little less than a year ago after taking an upper level undergraduate decision making course with Gretchen.  Since then I have worked with Gretchen on several individual projects.
+            	</p>
+
+          		<p>
+            	<a id="arrowpb">&#65515;</a>
+            	<a id="arrowpa">&#65516;</a>
+  				<a href="#" id="clickp">Expand the details on the <b>default partition study</b> (with Gretchen Chapman)</a>
+
+				<div id="partition" style="margin-right: 10%; margin-left: 10%; padding: 10px;">
+				<p> 
+					There are many situations in which an individual faces a social dilemma and must choose between an individualistic approach, where one consumes what is most beneficial to oneself, and a collective approach, consuming an optimal amount to benefit the whole group.   Decades of research have suggested numerous solutions to such common pool resource dilemmas that would foster collective action and result in more beneficial outcomes for the group.  Previously suggested solutions include external regulations and group communication.  In the current study we explored how partitions can foster collective action.  Partitions can decrease consumption &#8208; for example, people eat fewer potato chips when every seventh chip is dyed red (Geier et al., 2012) &#8208; because partitions suggest the appropriate consumption amount.  We investigated whether a partitioning manipulation would decrease consumption (i.e., improve cooperation), in a common pool resource scenario.
+				</p>
+
+				<p>
+					Participants (N=503) played the role of timber companies and decided how many hectares of trees to harvest from a common pool resource.  Each hectare harvested resulted in a real 1 cent payoff to the participant.  If the total harvest by a group of three participants was below a set limit, each participant received a bonus.  Limiting consumption and receiving the bonus resulted in a higher total payout to each player than consuming the maximum possible amount but forgoing the bonus.  We manipulated whether participants saw the common pool resource displayed as one whole, or partitioned into smaller amounts.  Specifically, participants either saw a picture of 150 trees unified in one group (see right panel of figure) or they saw a picture where three groups of 10 trees each were partitioned by borders, with the remaining 120 trees shown grayed out (see left panel of figure).  
+				</p>
+				
+				<img id="Partition_plot1" src="Partition_plot1.png" style="margin-left: 5%; margin: auto;">
+				
+				<p>
+					The partitions of 10 represented the optimal amount that each participant in the group should consume such that the group consumption would not exceed the limit eligible for the bonus.  All participants were defaulted to consume the maximum amount allowed (50), but they could opt out and specify a smaller consumption amount.  We found that the partition manipulation induced participants to reduce their consumption significantly.  That is, those in the partition condition were more likely to limit consumption to the optimal amount (10 hectares), or less, compared to those in the no partition condition.  Specifically, 65% of participants in the partition condition harvested 10 or fewer hectares of trees compared to only 49% in the no-partition condition, &#946;=-0.33, 95%CI [0.14, 0.52]  p=.0007.   Scores on the Social Value Orientation (SVO) scale (Murphy, et al., 2011) were positively related to limiting consumption, but SVO scores did not moderate the partitioning effect.  In the no partition condition, 45% of participants believed that both of the other participants in their group would harvest 10 or fewer hectares, compared to 54% who held this belief in the partition condition, &#946;=0.17, 95%CI [-0.00, 0.35], p=.06.  A bias-corrected bootstrap mediation model with 5,000 resamples indicated that believing that others in one&#39;s group would limit consumption was a marginal mediator of the partition effect, 95%CI [-0.003, 0.166], 90%CI [0.011, 0.155].  Thus, the partition manipulation encouraged limited consumption in part because it convinced participants that others would limit consumption.
+				</p>
+				<img id="partition_plot" src="Partition_plot.png" style="margin:auto;">
+				<p>
+					Although the partitioning manipulation did not alter the payout matrix presented to participants, it nevertheless influenced their cooperation behavior, suggesting that cues to consumption norms may be one key to promoting cooperative behavior in areas such as environmental conservation.  These results shed new light on choice architecture by demonstrating its applicability not only to individual behavior but also to collective action.
+				</p>
+				</div>
+				</p>
+				<p>
+                    I have also been working at the <a href="http://www8.gsb.columbia.edu/decisionsciences/">Center for Decision Sciences</a> in Columbia University since the beginning of summer 2014.  At Columbia, I mainly developed my R skills and helped design studies. The scripts that I wrote in R can be found <a href="scripts">here</a>.  Throughout the summer of 2014 I also worked at <a href="http://cbdr.cmu.edu/"> CBDR </a>at Carnegie Mellon University, where I mainly assisted professors and PhD candidates with their research.  I continued to stay in touch with Alex Imas and ran a follow up partitioning study with him.
+                </p>
+
+
+                <p> 
+                <a id="arrowdgb">&#65515;</a>
+                <a id="arrowdga">&#65516;</a>
+                <a href="#" id="clickdg">Expand the details on the <b>partition dictator game study</b> (with Alex Imas and Gretchen Chapman)</a>
+
+                <div id="dicgame" style="margin-right: 10%; margin-left: 10%; padding: 10px;">
+                <p>
+                    After finding a partitioning effect in the common pool resource default partition study, we decided to see whether we could use partitions in a multiple round game.  Specifically, we ran a dictator game on 206 MTurkers.  A dictator game involves two players: one as the dictator, and one as the recipient.  The dictator divides an amount of money between herself and the recipient.  In our experiment there were 4 rounds of allocations, and the dictator received 40 poker chips at the beginning of the experiment, each valued at 5 cents.  For each round, the dictator was allowed to use a maximum of 10 poker chips, and each of the four rounds was paid out for real.  All participants were asked to make decisions as if they were the dictator, but half were paid out as recipients and the other half as dictators, according to a coin toss at the end of the study.
+                </p>
+                <p>
+                    Our experimental manipulation consisted of a partition and no partition condition, with the former hypothesized to induce choice bracketing.  We hypothesized that if the participants saw the poker chips partitioned into 4 stacks of 10 (figure 1 left side) compared to one pile of 40 poker chips, then they would segregate their utility and thus give the same amount of poker chips to the recipient every round.  On the other hand, if the participant saw the no-partition presentation of the poker chips (figure 1, right side), then the participant would aggregate her utility for giving over rounds.  Therefore, we predicted constant giving across rounds in the partition condition and a decrease in giving across rounds in the no-partition condition.
+                </p>
+                <p>
+                    <figure>
+                        <img id="dg_plot_1" src="dg_plot_1.png">
+                        <figcaption style="text-align:center;"><i>Figure 1</i></figcaption>                        
+                    </figure>
+                </p>
+  
+                <p>
+                    <figure>      
+                        <img id="dg_plot_2" src="dg_plot_2.png" style="margin-left:18%">
+                        <figcaption style="text-align:center;"><i>Figure 2</i></figcaption>                        
+                    </figure>
+                </p>
+                <p>
+                   We found that in both conditions the average giving decreased significantly, F(3,205)=15.29, MSE=44.11, p&lt;.0001 (figure 2).  Prior giving was a highly significant predictor of future round giving, F(1,402)=612, p&lt;.0001.  More interestingly, we found a three-way interaction among prior round giving, partition condition and round, F(2,402)=4.27, p=.01.  Specifically, there was a constant association across rounds between prior round giving and current round giving in the partition condition.  In contrast, in the no partition condition, the association between prior round giving and current round giving increased over rounds.    In other words, people were resetting their utility functions of prior round giving when making their decision of future round giving in the partition condition, but were aggregating their utility of prior round giving in the no partition condition (figure 3).              
+                </p>
+                
+                    <figure>              
+                        <img id="dg_plot_3" src="dg_plot_3.png" style="margin-left: 15%">
+                        <figcaption style="text-align:center;"><i>Figure 3</i></figcaption>  
+                    </figure>
+                
+                </div>
+                </p>
+                </div>
+                
+    
+
+</template>
